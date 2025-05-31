@@ -1,6 +1,6 @@
 # MIT-Linear-Algebra
 
-This repository contains notes and Jupyter notebooks related to the MIT Linear Algebra course (18.06), as part of my transition into data science.
+This repository is part of my self-directed journey into data science, where I’m building a strong mathematical foundation starting with MIT's Linear Algebra (18.06) course
 
 ## 📚 Course Reference
 
@@ -27,7 +27,7 @@ git commit -m "Update notes and code"
 git push origin main
 ```
 
-###📝 Notes
+### 📝 Notes
 
 The textbook PDF file
 Gilbert Strang - Introduction to Linear Algebra-Wellesley-Cambridge Press (2023).pdf
