@@ -16,6 +16,7 @@ Use the following commands from your terminal to synchronize local work with thi
 ```bash
 cd "/Users/jirisebek/Documents/Data Science Transition/01 Linear Algebra"
 git pull origin main
+```
 
 ### 📤 Push local changes to GitHub
 
@@ -24,6 +25,7 @@ cd "/Users/jirisebek/Documents/Data Science Transition/01 Linear Algebra"
 git add .
 git commit -m "Update notes and code"
 git push origin main
+```
 
 ###📝 Notes
 
