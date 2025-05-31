@@ -4,7 +4,7 @@ This repository is part of my self-directed journey into data science, where I�
 
 ## 📚 Course Reference
 
-- **Course**: [MIT 18.06 Linear Algebra – Prof. Gilbert Strang](https://math.mit.edu/~gs/linearalgebra/)
+- **Course**: [MIT 18.06 Linear Algebra – Prof. Gilbert Strang](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/)
 - **Textbook**: *Introduction to Linear Algebra* by Gilbert Strang (Wellesley–Cambridge Press, 2023)
 
 ## 🖥️ Local Git Workflow
