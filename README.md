@@ -35,7 +35,7 @@ conda activate 01linearalgebra
 jupyter lab
 ```
 
-### 📝 Notes
+## 📝 Notes
 
 The textbook PDF file
 Gilbert Strang - Introduction to Linear Algebra-Wellesley-Cambridge Press (2023).pdf
