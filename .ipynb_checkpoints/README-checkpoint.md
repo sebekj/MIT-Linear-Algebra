@@ -1,6 +1,6 @@
 # MIT Linear Algebra
 
-This repository is part of my self-directed journey into data science, where I’m building a strong mathematical foundation starting with MIT's Linear Algebra (18.06) course
+This repository is part of my self-directed journey into data science, where I’m building a strong mathematical foundation starting with MIT's Linear Algebra (18.06) course.
 
 ## 📚 Course Reference
 
@@ -35,7 +35,7 @@ conda activate 01linearalgebra
 jupyter lab
 ```
 
-### 📝 Notes
+## 📝 Notes
 
 The textbook PDF file
 Gilbert Strang - Introduction to Linear Algebra-Wellesley-Cambridge Press (2023).pdf

@@ -16,7 +16,7 @@
    "metadata": {},
    "source": [
     "### Time keeping\n",
-    "14/3; 28/5; 1/6;"
+    "14/3; 28/5;"
    ]
   },
   {
@@ -642,9 +642,7 @@
     "\\mathbf{i} \\cdot \\mathbf{u} = \\cos\\theta\n",
     "$$\n",
     "\n",
-    "*Note: The intuition behind the coordinates of $\\mathbf{u}$ is as follows. In the unit circle, the hypotenuse of a right triangle is $1$, that is the radius. Then a vector $\\vec{\\mathbf{u}_{\\theta}}$ at an agle $\\theta$ has coordinates $\\cos\\theta = \\frac{adjanced}{hypotenuse} = \\frac{x}{1} = x$ and $\\sin\\theta = \\frac{opposite}{hypotenuse} = \\frac{y}{1} = y$. Therefore $(x,y)$ translates to $(\\cos\\theta, \\sin\\theta)$.*\n",
-    "\n",
-    "- $\\mathbf{u} = (\\cos\\theta, \\sin\\theta)$ is a unit vector because $\\mathbf{u} \\cdot \\mathbf{u} = \\cos^2 \\theta + \\sin^2 \\theta = 1$. Note that the *dot product* of a vector with itself gives the **square of its length**, $\\vec{u}\\cdot\\vec{u} = \\lVert\\vec{v}\\rVert^2$.\n",
+    "- $\\mathbf{u} = (\\cos\\theta, \\sin\\theta)$ is a unit vector because $\\mathbf{u} \\cdot \\mathbf{u} = \\cos^2 \\theta + \\sin^2 \\theta = 1$\n",
     "- Perpendicular vectors have $\\mathbf{v} \\cdot \\mathbf{w} = 0$. Then $\\lVert \\mathbf{v} + \\mathbf{w} \\rVert^2 = \\lVert \\mathbf{v} \\rVert^2 + \\lVert \\mathbf{w} \\rVert^2$.\n",
     "- Algebraically, this special case when $\\mathbf{v} \\cdot \\mathbf{w} = 0$:\n",
     "\n",
@@ -741,6 +739,18 @@
   },
   {
    "cell_type": "markdown",
+   "id": "6ec73acd-22c3-46a0-9bf4-241000bc8178",
+   "metadata": {},
+   "source": [
+    "### A Sidestep: a take on $\\sin$ and $\\cos$, an intuition\n",
+    "\n",
+    "*Q: How do the coordinates of vector $\\mathbf{u}$ turn out to be ($\\cos\\theta$,$\\sin\\theta$)?*\n",
+    "\n",
+    "It follows from the definition of the "
+   ]
+  },
+  {
+   "cell_type": "markdown",
    "id": "b886d7b8-1fcc-4f16-8953-f265996462ad",
    "metadata": {},
    "source": [
@@ -750,7 +760,7 @@
     "- The distance betwen point $(\\sin\\theta, \\cos\\theta$), which is on the Unit Circle, and vector $\\mathbf{i}$ is $\\sin\\theta$.\n",
     "\n",
     "### Angle Between Two Vectors\n",
-    "The **dot product** $\\mathbf{v} \\cdot \\mathbf{w}$ helps find the angle between any two nonzero vectors $\\mathbf{v}$ and $\\mathbf{w}$.\n",
+    "The **dot product** $\\mathbf{v} \\cdot \\mathbf{w}$ finds the angle between any two nonzero vectors $\\mathbf{v}$ and $\\mathbf{w}$.\n",
     "\n",
     "Consider unit vectors $\\mathbf{v} = (\\cos\\alpha, \\sin\\alpha)$ and $\\mathbf{w} = (\\cos\\beta, \\sin\\beta)$. They have a dot product $\\mathbf{v} \\cdot \\mathbf{w} = \\cos\\alpha\\cos\\beta + \\sin\\alpha\\sin\\beta$. In trigonometry, this is the formula for $\\cos(\\beta - \\alpha)$. The angle between the unit vectors $\\mathbf{v}$ and $\\mathbf{w}$ is $\\beta - \\alpha$. Now, $\\theta = \\beta - \\alpha$.\n",
     "\n",
@@ -766,17 +776,17 @@
     "- If vectors $\\mathbf{v}$ and $\\mathbf{w}$ are not unit vectors, it follows from $\\mathbf{u} = \\frac{\\mathbf{v}}{\\lVert \\mathbf{v} \\rVert}$ and $\\mathbf{U} = \\frac{\\mathbf{w}}{\\lVert \\mathbf{w} \\rVert}$ this **cosine formula** for angle $\\theta$:\n",
     "\n",
     "$$\n",
-    "\\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\lVert \\mathbf{v} \\rVert \\cdot \\lVert \\mathbf{w} \\rVert} = \\cos \\theta\n",
+    "\\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\lVert \\mathbf{v} \\rVert \\lVert \\mathbf{w} \\rVert} = \\cos \\theta\n",
     "$$\n",
     "\n",
     "### Schwarz Inequality\n",
     "\n",
-    "Whatever the angle, this dot product of $\\frac{\\mathbf{v}}{\\lVert \\mathbf{v} \\rVert}$ with $\\frac{\\mathbf{w}}{\\lVert \\mathbf{w} \\rVert}$ never exeeds one, it ranges from $-1$ to $1$ (the absolute value ranges from $0$ to $1$).\n",
+    "Whatever the angle, this dot product of $\\mathbf{v}/\\lVert \\mathbf{v} \\rVert$ with $\\mathbf{w}/\\lVert \\mathbf{w} \\rVert$ never exeeds one, it ranges from $-1$ to $1$ (the absolute value ranges from $0$ to $1$).\n",
     "\n",
     "Starting from the *cosine formula* we take the absolute value of both sides:\n",
     "\n",
     "$$\n",
-    "\\left| \\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\lVert \\mathbf{v} \\rVert \\cdot \\lVert \\mathbf{w} \\rVert} \\right| = |\\cos\\theta| \\le 1\n",
+    "\\left| \\frac{\\mathbf{v} \\cdot \\mathbf{w}}{\\lVert \\mathbf{v} \\rVert \\lVert \\mathbf{w} \\rVert} \\right| = |\\cos\\theta| \\le 1\n",
     "$$\n",
     "\n",
     "Now, we multiply both sides with $\\lVert \\mathbf{v} \\rVert \\lVert \\mathbf{w} \\rVert$ (which are non-negative):\n",
@@ -788,7 +798,7 @@
     "*Intuition:*\n",
     "\n",
     "- The dot product measures how aligned two vectors are.\n",
-    "- the product $\\lVert \\mathbf{v} \\rVert \\lVert \\mathbf{w} \\rVert$ is the **maximum possible value** of the dot product--it occurs when the vectors point in exactly the same or opposite directions, i.e. when $|\\cos\\theta| = 1$.\n",
+    "- the product $\\lVert \\mathbf{v} \\rVert \\lVert \\mathbf{w} \\rVert$ is the **maximum possible value** of the dot product--it occurs when the vectors point in exactly the same or opposite directions, i.e. when $|\\cos\\theta| = 1.\n",
     "- For any other angle, the dot product is *less than* that maximum.\n",
     "\n",
     "This is the **Schwarz inequality** $|\\mathbf{v} \\cdot \\mathbf{w}| \\le \\lVert \\mathbf{v} \\rVert \\lVert \\mathbf{w} \\rVert$ for dot products. From this the **Triangle Inequality** can be derived:\n",
@@ -829,7 +839,7 @@
     "= (\\lVert \\mathbf{v} \\rVert + \\lVert \\mathbf{w} \\rVert)^2\n",
     "$$\n",
     "\n",
-    "7. Now, take square roots of both sides (both are non-negative):\n",
+    "7. Now, take the wquare roots of both sides (both are non-negative):\n",
     "\n",
     "$$\n",
     "\\lVert \\mathbf{v} + \\mathbf{w} \\rVert \\le \\lVert \\mathbf{v} \\rVert + \\lVert \\mathbf{w} \\rVert\n",
