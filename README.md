@@ -41,6 +41,6 @@ The textbook PDF file
 Gilbert Strang - Introduction to Linear Algebra-Wellesley-Cambridge Press (2023).pdf
 is stored locally and excluded from version control via .gitignore.
 
-This repository is currently private but may be opened publicly in the future to share learning progress.
+This repository has been private but is currently opened publicly to share learning progress.
 
 Code is licensed under the MIT License. Notes and written content are licensed under CC BY 4.0.
