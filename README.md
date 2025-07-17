@@ -1,4 +1,4 @@
-# MIT Linear Algebra
+# MIT Linear Algebra & Khan Academy Calculus
 
 This repository is part of my self-directed journey into data science, where I’m building a strong mathematical foundation starting with MIT's Linear Algebra (18.06) course.
 
@@ -6,6 +6,8 @@ This repository is part of my self-directed journey into data science, where I�
 
 - **Course**: [MIT 18.06 Linear Algebra – Prof. Gilbert Strang](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/)
 - **Textbook**: *Introduction to Linear Algebra* by Gilbert Strang (Wellesley–Cambridge Press, 2023)
+- **Course**: [Calculus 1](https://www.khanacademy.org/math/calculus-1)
+- **Course**: [Calculus 2](https://www.khanacademy.org/math/calculus-2)
 
 ## 🖥️ Local Git Workflow
 
